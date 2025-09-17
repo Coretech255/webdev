@@ -1,0 +1,33 @@
+<!-- Module 2 - Forms & Accessibility - Session 3: Accessible Forms -->
+<!-- File: module2/session3/demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Contact Form</title>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <form action="/contact" method="POST" aria-label="Contact form">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" aria-required="true">
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" aria-required="true">
+    </div>
+
+    <div>
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30" aria-describedby="msgHelp"></textarea>
+      <small id="msgHelp">Include your full question or feedback.</small>
+    </div>
+
+    <div>
+      <button type="submit">Send</button>
+    </div>
+  </form>
+</body>
+</html>

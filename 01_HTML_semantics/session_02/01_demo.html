@@ -1,0 +1,72 @@
+<!-- Module 1 - Semantic HTML - Session 2: Core Semantic Elements -->
+<!-- File: module1/session2/demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Core Semantic Elements</title>
+
+    <style>
+        h1 {
+            text-transform: uppercase;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: green;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="border: 1px solid red; padding: 10px 0 20px 30px;">My Semantic Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles" id="articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="articles">
+            <article style="border: 1px solid blue;" class="article-class">
+                <div class="article-image">
+                    <span  class="wise">Wise</span>
+                </div>
+                <h3 class="article-title">Article One</h3>
+                <p>This is the content of the first article.</p>
+            </article>
+            <article>
+                <h2 class="article-title">Article Two</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <q> saepe ad assumenda facilis 
+                    itaque dolores officia, nesciunt officiis cum quia veniam ut</q> 
+                    praesentium quos! Odit aliquam officiis at harum cum.</p>
+            </article>
+        </section>
+        <aside>
+            <h5>Related Links</h5>
+            <ul>
+                <li><a href="#">HTML Reference</a></li>
+                <li><a href="#">W3C Standards</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

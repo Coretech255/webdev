@@ -1,0 +1,36 @@
+<!-- Module 1 - Semantic HTML - Session 4: SEO & Microdata -->
+<!-- File: module1/session4/demo.html -->
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/Article">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An example article page with microdata for SEO.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Semantic HTML and SEO">
+    <meta property="og:description" content="How to use semantic HTML and microdata to improve SEO.">
+    <meta property="og:image" content="https://unsplash.com/photos/lines-of-html-codes-4hbJ-eymZ1o">
+    <title>Semantic HTML and SEO</title>
+</head>
+
+<body>
+    <article>
+        <h1 itemprop="headline">Understanding Semantic HTML for SEO</h1>
+        <p><span itemprop="author">Jane Doe</span> - <time itemprop="datePublished" datetime="2025-06-09">June 9,
+                2025</time></p>
+        <div itemprop="articleBody">
+            <p>Semantic HTML helps search engines understand your content more accurately...</p>
+        </div>
+    </article>
+
+    <div itemscope itemtype="https://schema.org/Product">
+        <h1 itemprop="name">Dell XPS 13</h1>
+        <img src="../session_03/images/lake.jpg" alt="Dell XPS 13" itemprop="image" width="300" height="200">
+        <p itemprop="description">A powerful, lightweight laptop with a 13-inch display.</p>
+        <p>Price: $<span itemprop="price">999.99</span></p>
+        <link itemprop="availability" href="https://schema.org/InStock">In stock</link>
+    </div>
+
+</body>
+
+</html>

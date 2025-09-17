@@ -1,0 +1,49 @@
+<!-- Module 2 - Forms & Accessibility - Session 2: Input Types & Fieldsets -->
+<!-- File: module2/session2/demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Inputs & Grouping</title>
+</head>
+<body>
+  <h1>Event Registration</h1>
+  <form action="/register" method="POST">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name"><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+      <label for="meal">Meal Preference:</label>
+      <select id="meal" name="meal">
+        <option value="veg">Vegetarian</option>
+        <option value="non-veg">Non-Vegetarian</option>
+        <option value="vegan">Vegan</option>
+      </select><br><br>
+
+      <label for="tshirt">T-Shirt Size:</label>
+      <input list="sizes" id="tshirt" name="tshirt">
+      <datalist id="sizes">
+        <option value="Small">
+        <option value="Medium">
+        <option value="Large">
+        <option value="XL">
+      </datalist>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

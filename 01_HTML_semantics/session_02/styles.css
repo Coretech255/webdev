@@ -1,0 +1,86 @@
+body {
+    font-family: "Exo 2", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 10px;
+    background-color: #f7f4f7;
+}
+
+
+.article-image {
+    width: 400px;
+    height: 400px;
+    background-image: url("../session_03/images/lake.jpg");
+    background-position: center;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.wise{
+
+    float:bottom
+}
+
+.article-class{
+    position: relative;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-style: italic;
+    position: absolute;
+    top: 0%;
+    left: 90%;
+}
+
+h2 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: oblique;
+    text-shadow: red 1px 1px 1.7px;
+    letter-spacing: .5ch;
+    
+}
+
+p {
+    width: 400px;
+    line-height: 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: brown !important;
+}
+
+#articles {
+    /*color: blue;*/
+    font-size: 18px;
+}
+
+.article-title {
+    color: hex(0xFF0000);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .article-image{
+        display: none;
+    }
+
+    .article-title {
+        color: red;
+        font-size: 20px;
+        font-weight: 800;
+    }
+}
